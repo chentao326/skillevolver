@@ -1,0 +1,28 @@
+{
+  "name": "skillevolver",
+  "private": true,
+  "version": "0.1.0",
+  "description": "SkillEvolver: 让 AI Agent 在不动模型权重的情况下自我进化出可复用技能",
+  "scripts": {
+    "build": "pnpm -r build",
+    "lint": "eslint packages/*/src --ext .ts",
+    "typecheck": "pnpm -r typecheck",
+    "test": "VITEST_WORKSPACE=false vitest -c vitest.config.ts run && pnpm -r test",
+    "test:root": "VITEST_WORKSPACE=false vitest -c vitest.config.ts run",
+    "test:pkgs": "pnpm -r test",
+    "clean": "pnpm -r clean"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^22.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@typescript-eslint/parser": "^8.0.0",
+    "eslint": "^9.0.0",
+    "prettier": "^3.4.0",
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

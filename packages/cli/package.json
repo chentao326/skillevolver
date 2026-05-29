@@ -1,0 +1,26 @@
+{
+  "name": "@skillevolver/cli",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "skillevolver": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run --passWithNoTests",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@skillevolver/core": "workspace:*",
+    "@skillevolver/sandbox": "workspace:*",
+    "@skillevolver/skill-registry": "workspace:*",
+    "commander": "^13.0.0",
+    "chalk": "^5.4.0"
+  },
+  "devDependencies": {
+    "vitest": "^3.0.0"
+  }
+}
