@@ -40,7 +40,7 @@ python scripts/count.py input/*.txt output/stats.json
 ## Constraints
 - 从 input/ 目录运行时检测文件名
 - 输出 JSON 格式：{ "total_words": N, "total_chars": N }
-```
+
 </details>
 
 ## 🔄 核心机制
